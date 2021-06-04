@@ -27,6 +27,11 @@
   </body>
   <script>
     let quote = 'I dO nOT lIke gREen eGgS anD HAM';
+    let quoteLowerCase = quote.toLowerCase();
+    let quoteCapital = quoteLowerCase[0].toUpperCase();
+    let fixedQuote1 = quoteCapital+quoteLowerCase.substring(1);
+    let fixedQuote = fixedQuote1.replaceAll("green eggs and ham", "brocoli")
+    let finalQuote = fixedQuote1 + ".";
 
     // Add your code here
 

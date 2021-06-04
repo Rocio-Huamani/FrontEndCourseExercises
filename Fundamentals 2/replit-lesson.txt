@@ -1,0 +1,163 @@
+data types 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+    <style>
+        body {
+            background-color: #f3ede5;
+            
+        }
+            
+        img {
+            height: 30%;
+        }
+        
+        h1 {
+            text-align: center;
+            color: black;
+            padding: 30px;
+            text-shadow: 5px 5px solid rgb(17, 28, 88);
+            font-size: 50px;
+            font-weight: bold;
+        }
+        table {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            width: 80%;
+            display: block;
+            background-color: whitesmoke;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f8e3e3;
+        }
+        h3 {
+            text-align: center;
+        }
+        footer {
+            padding: 20px;
+            background-color: rgb(77, 73, 73);
+            font-size: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            color: white
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src= "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Java">
+         <h1>Basic JS Data Types</h1>
+    </header>
+    <section>
+        <table>
+            <tr>
+                <th>Data Type</th> 
+                <th> What is</th>
+                <th> link</th>
+            </tr>
+            <tr>
+                <td>Number</td> 
+                <td> Used to include number data type</td> 
+                <td> <a href="https://www.programiz.com/javascript/data-types">Programiz.com</a></td>
+            </tr>
+            <tr>
+                <td>BigInit</td> 
+                <td>Represents integers with big numbers that can not be represent with the numbers data type. Goes with "n" at the end.</td> 
+                <td> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">Developer Mozilla</a></td>
+            </tr>
+            <tr>
+                <td>String</td> 
+                <td> Used to include textual data, goes with quotes.</td> 
+                <td> <a href="https://javascript.info/string"> JS info</a></td>
+            </tr>
+            <tr>
+                <td>Boolean</td> 
+                <td> Has two values: True or False.</td> 
+                <td><a href="https://www.tutorialsteacher.com/javascript/javascript-boolean">Tutorials Teacher</a></td>
+            </tr>
+            <tr>
+                <td>Null value</td> 
+                <td>It means that there is no value, it is different than a empty string.</td> 
+                <td><a href="https://dmitripavlutin.com/javascript-null/">dmitripavlutin</td>
+            </tr>
+            <tr>
+                <td>Undefined value</td> 
+                <td>When a variable is declared without assigned value has the value "undefined".</td> 
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">Developer Mozilla</a></td>
+            </tr>
+            <tr>
+                <td>Objects</td> 
+                <td>Allows to store collections and has properties.</td> 
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Developer Mozilla</a></td>
+            </tr>
+            <tr>
+                <td>Type of operator</td> 
+                <td>Let us know the type of the argument.</td> 
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof">Developer Mozilla</a></td>
+            </tr>        
+        
+    </table>
+    </section>
+    <footer>
+        <h3>Fundamentals 2</h3>
+    </footer>
+    
+    
+</body>
+</html>
+
+
+
+
+
+strings 1
+let quoteStart = "Don't judge each day by the harvest you reap ";
+    let quoteEnd = 'but by the seeds you plant.';
+    let finalQuote = quoteStart + quoteEnd;
+    
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = finalQuote;
+
+    section.appendChild(para1);
+
+strings 2
+    let quote = 'I do not like green eggs and ham. I do not like them, Sam-I-Am.';
+    let substring = 'green eggs and ham';
+    let quoteLength = quote.length;
+    let index = quote.indexOf("substring");
+    let revisedQuote = quote.slice(0,33);
+
+strings 3
+    let quote = 'I dO nOT lIke gREen eGgS anD HAM';
+    let quoteLowerCase = quote.toLowerCase();
+    let quoteCapital = quoteLowerCase[0].toUpperCase();
+    let fixedQuote1 = quoteCapital+quoteLowerCase.substring(1);
+    let fixedQuote = fixedQuote1.replaceAll("green eggs and ham", "brocoli")
+    let finalQuote = fixedQuote1 + ".";
+
+strings 4
+     let theorem = 'Pythagorean theorem';
+
+    let a = 5;
+    let b = 8;
+    let lengthHypotenuse = Math.sqrt((a**2)+(b**2))
+    let myString = 'Using '+theorem+ ', we can work out that that if the two shortest sides of a right-angled triangle have lengths of ' + a + ' and ' +b + ', the length of the hypotenuse is ' + lengthHypotenuse + '.';
+
+
+

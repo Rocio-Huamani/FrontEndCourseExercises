@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    let choices = ['rock', 'paper', 'scissors'];
+    let computerChoice = choices[Math.floor(Math.random() * 3)];
+    let playerChoice;
+
+        do  {
+        playerChoice = prompt('Type your choice in lower case letters: ' + choices);
+        } while (choices.indexOf(playerChoice) < 0);
+
+        let gameResult = 'You: "' + playerChoice + '", Computer: "' + computerChoice + '". ';
+        if (playerChoice === computerChoice) {
+            gameResult += 'Tie game!';
+        } else {
+    
+            let victory = "You win!";
+            if (playerChoice === "rock" && computerChoice === "scissors") {
+            gameResult += victory;
+            } else if (userChoice === "paper" && computerChoice === "rock") {
+            gameResult += victory;
+            } else if (userChoice === "scissors" && computerChoice === "paper") {
+            gameResult += victory;
+            } else {
+            gameResult += 'You loss.';
+            }
+        }
+
+    console.log(gameResult);
+    </script>
+
+
+</body>
+</html>

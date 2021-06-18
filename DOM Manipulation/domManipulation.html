@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        div {
+         display: block;
+         border: 2px solid black; 
+         border-radius: 5px; 
+         background-color: pink;
+         text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANIPULATION</title>
+</head>
+<body>
+    <P style="color:red;">Hej I'm red!</P>
+    <h3 style="color: blue;">I'm a blue!</h3>
+    <div id="wrapper">
+        <h1>I'm in div</h1>
+        
+    </div>
+    <script> 
+        const wrapper = document.querySelector("#wrapper");
+        const container = document.createElement("p");
+        container.classList.add("content");
+        container.textContent = "ME TOO!";
+        wrapper.appendChild(container);
+    </script>
+</body>
+</html>

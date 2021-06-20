@@ -1,0 +1,9 @@
+.gridRow {
+    border: 1px black;
+}
+.cell {
+    border: 1px black;
+    min-width: 10px;
+    min-height: 20px;
+    display: inline-block;
+}
